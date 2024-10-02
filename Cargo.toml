@@ -1,0 +1,13 @@
+[package]
+name = "sqlx-bug"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+sqlx = { version = "0.8.2", features = [
+    "postgres",
+    "runtime-tokio",
+    "tls-native-tls",
+] }
+tokio = { version = "1.40.0", features = ["full"] }

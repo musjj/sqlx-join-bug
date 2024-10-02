@@ -1,0 +1,8 @@
+CREATE TABLE foo (
+    id BIGSERIAL PRIMARY KEY
+);
+
+CREATE TABLE bar (
+    foo_id BIGSERIAL PRIMARY KEY REFERENCES foo (id)
+);
+
